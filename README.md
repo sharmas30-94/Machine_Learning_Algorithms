@@ -39,20 +39,11 @@ install.packages(c(
   "glmnet", "Boruta", "MASS", "pROC"
 ))
 
-## Project Structure (suggested)
+---
 
-```
-project/
-├─ data/
-│  └─ lesions_rituximab.csv
-├─ scripts/
-│  └─ analysis.R
-├─ results/
-│  ├─ boruta_stats.csv
-│  ├─ feature_list_confirmed.txt
-│  ├─ metrics_train_test.csv
-│  ├─ glmnet_coefs.csv
-│  └─ models/ (optional: saved caret models)
-└─ README.md
-```
+## How to run
+Rscript scripts/analysis.R data/lesions_rituximab.csv
+# or, if your CSV lives elsewhere:
+# Rscript scripts/analysis.R /full/path/to/lesions_rituximab.csv
+
 
