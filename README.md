@@ -57,6 +57,3 @@ project/
 └─ README.md
 ```
 
-
-
-**Maintainer:** Your Name · email\@domain · Institution
