@@ -9,8 +9,8 @@ End‑to‑end R workflow to clean clinical data, define an overall survival cat
 * **Goal:** Predict short OS (≤3 years) vs longer OS (>3 years) in **Rituximab‑positive** patients from the **WES** cohort.
 * **Label:** `OS_Category = 1` if `OS.YEARS ≤ 3`, else `0`.
 * **Models:** Random Forest, XGBoost, Ridge/Lasso/Elastic Net (glmnet), full & stepwise Logistic Regression, RFE.
-* **Feature Selection:** Boruta (with TentativeRoughFix), optional manual 5‑feature LR.
-* **Evaluation:** Cross‑validated training + held‑out test; report Accuracy + ROC‑AUC (recommended).
+* **Feature Selection:** Boruta (with TentativeRoughFix), optional manual 5-feature LR.
+* **Evaluation:** Cross-validated training + held‑out test; report Accuracy + ROC‑AUC (recommended).
 
 ---
 
@@ -27,7 +27,6 @@ End‑to‑end R workflow to clean clinical data, define an overall survival cat
   3. Keep only `Rituximab == 1`
   4. Keep only `Cohort == "WES"`
 
-> 🔧 **Note:** In your original script, there were duplicate NA‑replacement lines and a small typo when setting `OS.Censor`. The cleaned snippet below fixes these.
 
 ---
 
