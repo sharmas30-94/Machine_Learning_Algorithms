@@ -10,7 +10,7 @@ End‑to‑end R workflow to clean clinical data, define an overall survival cat
 * **Label:** `OS_Category = 1` if `OS.YEARS ≤ 3`, else `0`.
 * **Models:** Random Forest, XGBoost, Ridge/Lasso/Elastic Net (glmnet), full & stepwise Logistic Regression, RFE.
 * **Feature Selection:** Boruta (with TentativeRoughFix), optional manual 5-feature LR.
-* **Evaluation:** Cross-validated training + held‑out test; report Accuracy + ROC‑AUC (recommended).
+* **Evaluation:** Cross-validated training + held‑out test; report Accuracy + ROC‑AUC 
 
 ---
 
