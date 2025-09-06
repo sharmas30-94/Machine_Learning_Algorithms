@@ -28,18 +28,7 @@ End‑to‑end R workflow to clean clinical data, define an overall survival cat
   4. Keep only `Cohort == "WES"`
 
 
----
-
-## Environment
-
-```r
-# R >= 4.2 recommended
-install.packages(c(
-  "tidyverse", "data.table", "caret", "ranger", "xgboost",
-  "glmnet", "Boruta", "MASS", "pROC"
-))
-
----
+-- 
 
 ## How to run
 Rscript scripts/analysis.R data/lesions_rituximab.csv
