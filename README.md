@@ -32,7 +32,7 @@ End‑to‑end R workflow to clean clinical data, define an overall survival cat
 
 ## How to run
 Rscript scripts/analysis.R data/lesions_rituximab.csv
-# or, if your CSV lives elsewhere:
-# Rscript scripts/analysis.R /full/path/to/lesions_rituximab.csv
+or, if your CSV lives elsewhere:
+Rscript scripts/analysis.R /full/path/to/lesions_rituximab.csv
 
 
