@@ -7,7 +7,7 @@ End‑to‑end R workflow to clean clinical data, define an overall survival cat
 ## TL;DR
 
 * **Goal:** Predict short OS (≤3 years) vs longer OS (>3 years) in **Rituximab‑positive** patients from the **WES** cohort.
-* **Label:** `OS_Category = 1` if `OS.YEARS ≤ 3`, else `0`.
+* **Label:** `OS_Category = Short` if `OS.YEARS ≤ 3`, else `Long`.
 * **Models:** Random Forest, XGBoost, Ridge/Lasso/Elastic Net (glmnet), full & stepwise Logistic Regression, RFE.
 * **Feature Selection:** Boruta (with TentativeRoughFix), optional manual 5-feature LR.
 * **Evaluation:** Cross-validated training + held‑out test; report Accuracy + ROC‑AUC 
